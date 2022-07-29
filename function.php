@@ -1,0 +1,33 @@
+<?php
+function sayHello($name){
+    echo "hello ".$name;
+}
+sayHello('austin');
+
+function multiply($num1, $num2){
+    return $num1 * $num2;
+}
+
+echo multiply(8,9);
+
+$name = "austin";
+function sayHi(){
+    global $name;  //get global variable
+    echo "hello $name";
+}
+
+sayHi()
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
